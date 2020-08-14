@@ -1,0 +1,15 @@
+CREATE DATABASE GerenciadorDeMedicos
+GO
+USE GerenciadorDeMedicos
+GO
+CREATE TABLE Especialidade(
+	Id		INT PRIMARY KEY IDENTITY,
+	Titulo	VARCHAR
+	)
+GO
+CREATE TABLE Medico(
+	Id		INT PRIMARY KEY IDENTITY,
+	Nome	VARCHAR NOT NULL,
+	Crm		VARCHAR UNIQUE NOT NULL,
+	Fk_Especialidades INT FOREIGN KEY REFERENCES Especialidade(Id)
+	)
