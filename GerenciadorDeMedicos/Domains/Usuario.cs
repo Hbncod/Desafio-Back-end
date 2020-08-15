@@ -13,7 +13,6 @@ namespace GerenciadorDeMedicos.Domains
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        // Define o tipo da coluna
         [Column(TypeName = "VARCHAR(150)")]
         [StringLength(150, ErrorMessage = "O máximo de caracteres permitido é 150")]
         [DataType(DataType.EmailAddress)]
