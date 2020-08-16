@@ -52,5 +52,3 @@ C:\Users\HENRIQUE\Desktop\Desafio-Back-end\GerenciadorDeMedicos\obj\Debug\netcor
 C:\Users\HENRIQUE\Desktop\Desafio-Back-end\GerenciadorDeMedicos\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.Design.dll
 C:\Users\HENRIQUE\Desktop\Desafio-Back-end\GerenciadorDeMedicos\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
 C:\Users\HENRIQUE\Desktop\Desafio-Back-end\GerenciadorDeMedicos\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\HENRIQUE\Desktop\Desafio-Back-end\GerenciadorDeMedicos\obj\Debug\netcoreapp3.1\GerenciadorDeMedicos.csproj.CoreCompileInputs.cache
-C:\Users\HENRIQUE\Desktop\Desafio-Back-end\GerenciadorDeMedicos\obj\Debug\netcoreapp3.1\GerenciadorDeMedicos.MvcApplicationPartsAssemblyInfo.cache
