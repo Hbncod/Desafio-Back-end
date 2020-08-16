@@ -19,6 +19,10 @@ namespace GerenciadorDeMedicos.Controllers
         {
             _medicoRepository = new MedicoRepository();
         }
+        /// <summary>
+        /// Lista todos os médicos
+        /// </summary>
+        /// <returns>status code 200 e uma lista de médicos</returns>
         [HttpGet]
         public IActionResult Get()
         {
@@ -31,6 +35,11 @@ namespace GerenciadorDeMedicos.Controllers
                 return BadRequest(e);
             }
         }
+        /// <summary>
+        /// Busca uma lista de médicos que possuem uma especialidade especifica 
+        /// </summary>
+        /// <param name="especialidade">nome da especialidade</param>
+        /// <returns>status code 200 e uma lista de médicos que possuem uma especialidade especifica </returns>
         [HttpGet("{especialidade}")]
         public IActionResult GetByEspecialidades(string especialidade)
         {
@@ -44,6 +53,11 @@ namespace GerenciadorDeMedicos.Controllers
                 return BadRequest(e);
             }
         }
+        /// <summary>
+        /// Cadastra um novo médico
+        /// </summary>
+        /// <param name="medico">dados do médico</param>
+        /// <returns>status code 200 e Id do médico cadastrado</returns>
         [HttpPost]
         public IActionResult Cadastrar(Medico medico)
         {
@@ -56,6 +70,11 @@ namespace GerenciadorDeMedicos.Controllers
                 return BadRequest(e);
             }
         }
+        /// <summary>
+        /// Deleta um médico
+        /// </summary>
+        /// <param name="id">Id do médico a ser deletado</param>
+        /// <returns>Status code 200</returns>
         [HttpDelete("{id}")]
         public IActionResult Deletar(int id)
         {

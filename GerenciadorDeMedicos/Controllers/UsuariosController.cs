@@ -19,6 +19,11 @@ namespace GerenciadorDeMedicos.Controllers
         {
             _usuarioRepository = new UsuarioRepository();
         }
+        /// <summary>
+        /// Cadastra um usuário
+        /// </summary>
+        /// <param name="usuario">Dados do usuário a ser cadastrado</param>
+        /// <returns>status Created</returns>
         [HttpPost]
         public IActionResult Cadastrar(Usuario usuario)
         {
@@ -30,7 +35,6 @@ namespace GerenciadorDeMedicos.Controllers
             catch (Exception e)
             {
                 return BadRequest(e);
-                throw;
             }
         }
     }

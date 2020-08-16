@@ -20,6 +20,11 @@ namespace GerenciadorDeMedicos.Controllers
         {
             _especialidadeRepository = new EspecialidadeRepository();
         }
+        /// <summary>
+        /// Cria uma nova especialidade
+        /// </summary>
+        /// <param name="especialidade">Dados da especialidade</param>
+        /// <returns>status code Created</returns>
         [HttpPost]
         public IActionResult Criar(Especialidade especialidade)
         {
@@ -34,8 +39,13 @@ namespace GerenciadorDeMedicos.Controllers
                 return BadRequest(e);
             }
         }
+        /// <summary>
+        /// Deleta uma especialidade
+        /// </summary>
+        /// <param name="id">id da especialidade a ser deletada</param>
+        /// <returns>status code 200</returns>
         [HttpDelete("{id}")]
-        public IActionResult Criar(int id)
+        public IActionResult Deletar(int id)
         {
             try
             {

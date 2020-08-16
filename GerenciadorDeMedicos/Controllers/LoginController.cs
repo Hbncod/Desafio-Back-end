@@ -23,6 +23,11 @@ namespace GerenciadorDeMedicos.Controllers
         {
             _usuarioRepository = new UsuarioRepository();
         }
+        /// <summary>
+        /// Faz login
+        /// </summary>
+        /// <param name="Login">Email e senha do usuário a ser buscado</param>
+        /// <returns>Token de acesso</returns>
         [HttpPost]
         public IActionResult Login(LoginViewModel Login)
         {
