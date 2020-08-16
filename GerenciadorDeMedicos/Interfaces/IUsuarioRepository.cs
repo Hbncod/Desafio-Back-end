@@ -25,5 +25,11 @@ namespace GerenciadorDeMedicos.Interfaces
         /// </summary>
         /// <param name="Id">Id do usuário a ser deletado</param>
         void Deletar(int Id);
+        /// <summary>
+        /// Busca um usuário por id
+        /// </summary>
+        /// <param name="id">id do usuário a ser buscado</param>
+        /// <returns>retorna o usuário referente ao id informado</returns>
+        Usuario BuscarPorId(int id);
     }
 }

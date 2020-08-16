@@ -18,5 +18,11 @@ namespace GerenciadorDeMedicos.Interfaces
         /// </summary>
         /// <param name="IdEspecialidade">Id da especialidade a ser excluida</param>
         void Deletar(int IdEspecialidade);
+        /// <summary>
+        /// Busca uma especialidade por id
+        /// </summary>
+        /// <param name="id">id da especialidade a ser buscada</param>
+        /// <returns></returns>
+        Especialidade BuscarPorId(int id);
     }
 }
