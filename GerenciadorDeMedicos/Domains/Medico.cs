@@ -31,7 +31,5 @@ namespace GerenciadorDeMedicos.Domains
         public Especialidade Especialidade1 { get; set; }
         
         public Especialidade Especialidade2 { get; set; }
-        [NotMapped]
-        public List<Especialidade> Especialidades { get; set; }
     }
 }
