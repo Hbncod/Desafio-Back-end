@@ -63,5 +63,3 @@ C:\Users\HENRIQUE\Desktop\Desafio-Back-end\GerenciadorDeMedicos\bin\Debug\netcor
 C:\Users\HENRIQUE\Desktop\Desafio-Back-end\GerenciadorDeMedicos\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\HENRIQUE\Desktop\Desafio-Back-end\GerenciadorDeMedicos\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
 C:\Users\HENRIQUE\Desktop\Desafio-Back-end\GerenciadorDeMedicos\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\HENRIQUE\Desktop\Desafio-Back-end\GerenciadorDeMedicos\obj\Debug\netcoreapp3.1\GerenciadorDeMedicos.csproj.CoreCompileInputs.cache
-C:\Users\HENRIQUE\Desktop\Desafio-Back-end\GerenciadorDeMedicos\obj\Debug\netcoreapp3.1\GerenciadorDeMedicos.MvcApplicationPartsAssemblyInfo.cache
