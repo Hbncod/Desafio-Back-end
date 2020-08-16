@@ -19,35 +19,23 @@ namespace GerenciadorDeMedicos.Context
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Especialidade>(entity =>
+            {
+                entity
+                .HasIndex(E => E.Id)
+                .IsUnique();
+            });        
             modelBuilder.Entity<Medico>(entity =>
             {
                 entity
                 .HasIndex(M => M.Id)
                 .IsUnique();
-
-                entity.HasData(
-                new Medico
-                {
-                    Id = 1,
-                    Nome = "Giovana Dias Carvalho",
-                    Cpf = "776.077.220-33",
-                    Crm = "2510-SC",
-                });
             });
             modelBuilder.Entity<Usuario>(entity =>
             {
                 entity
                 .HasIndex(U => U.Id)
                 .IsUnique();
-
-                entity
-                .HasData(
-                new Usuario
-                {
-                    Id = 1,
-                    Email = "user@user.com",
-                    Senha = "user",
-                });
             });
             base.OnModelCreating(modelBuilder);
         }
