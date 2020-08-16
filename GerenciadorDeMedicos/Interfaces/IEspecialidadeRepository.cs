@@ -24,5 +24,11 @@ namespace GerenciadorDeMedicos.Interfaces
         /// <param name="id">id da especialidade a ser buscada</param>
         /// <returns></returns>
         Especialidade BuscarPorId(int id);
+        /// <summary>
+        /// busca uma especialidade por seu titulo
+        /// </summary>
+        /// <param name="titulo"></param>
+        /// <returns>retorna o id da especialidade buscada</returns>
+        int BuscarPorTitulo(string titulo);
     }
 }

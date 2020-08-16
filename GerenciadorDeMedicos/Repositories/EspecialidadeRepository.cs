@@ -17,6 +17,12 @@ namespace GerenciadorDeMedicos.Repositories
             return _context.Especialidade.FirstOrDefault(E => E.Id == id);
         }
 
+        public int BuscarPorTitulo(string titulo)
+        {
+            Especialidade especialidade = _context.Especialidade.FirstOrDefault(E => E.Titulo == titulo);
+            return especialidade.Id;
+        }
+
         public void Criar(Especialidade especialidade)
         {
             _context.Especialidade.Add(especialidade);
