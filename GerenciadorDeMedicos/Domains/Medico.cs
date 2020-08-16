@@ -22,7 +22,16 @@ namespace GerenciadorDeMedicos.Domains
         [Required(ErrorMessage = "A Crm do médico é obrigatória")]
         [StringLength(12, MinimumLength =2, ErrorMessage = "Crm inválida")]
         public string Crm { get; set; }
-        [Required(ErrorMessage = "o médico deve conter no minimo uma especialidade")]
-        public List<string> Especialidades { get; set; }
+        [ForeignKey("Fk_Especialidade1"), Column(Order = 0)]
+        [Required(ErrorMessage ="Um médico precisa de ao menos uma especialidade")]
+        public int Fk_Especialidade1 { get; set; }
+        [ForeignKey("Fk_Especialidade2"), Column(Order = 1)]
+        public int Fk_Especialidade2 { get; set; }
+        
+        public Especialidade Especialidade1 { get; set; }
+        
+        public Especialidade Especialidade2 { get; set; }
+        [NotMapped]
+        public List<Especialidade> Especialidades { get; set; }
     }
 }
