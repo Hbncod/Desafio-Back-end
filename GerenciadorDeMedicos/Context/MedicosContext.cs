@@ -11,6 +11,7 @@ namespace GerenciadorDeMedicos.Context
     {
         public DbSet<Medico> Medico { get; set; }
         public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<Especialidade> Especialidade { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
